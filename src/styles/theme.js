@@ -7,7 +7,6 @@ const theme = {
     lightBlue: "#8dbad8",
     lightGray: "#E3DDDD",
     mediumGray: "#AAAAAA",
-    darkGray: "#333333",
   },
   typography: {
     h1: "'Barlow Condensed', Arial, Helvetica, sans-serif",
