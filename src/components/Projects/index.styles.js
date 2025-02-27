@@ -4,8 +4,12 @@ export const ProjectsContainer = styled.section`
   max-width: 1200px;
   width: 100%;
   margin: 0 auto;
-  padding: 0px 10px;
+  padding: 0px 40px;
   text-align: center;
+
+  @media (max-width: 660px) {
+    padding: 0px 20px;
+  }
 
   h2 {
     font-size: clamp(30px, 4vw, 38px);
@@ -31,7 +35,7 @@ export const Card = styled.div`
   display: flex;
   max-width: 1000px;
   margin: 0 auto;
-  margin-bottom: 60px;
+  margin-bottom: 40px;
   overflow: hidden;
 
   @media (max-width: 660px) {
@@ -47,6 +51,7 @@ export const CardImage = styled.figure`
   justify-content: center;
   overflow: hidden;
   margin: 0;
+  border-right: 1px solid ${(props) => props.theme.color.mediumGray};
 
   img {
     width: 100%;
@@ -66,6 +71,8 @@ export const CardImage = styled.figure`
   }
 
   @media (max-width: 660px) {
+    border-right: none;
+    border-bottom: 1px solid ${(props) => props.theme.color.mediumGray};
     align-items: flex-start;
     height: auto;
   }
