@@ -1,11 +1,13 @@
 const theme = {
-  colors: {
-    siteBackground: "#000E16",
-    lightBlue: "#8dbad8",
-    lightGrey: "#E3DDDD",
-    headerFooter: "#605D5D",
-    white: "#FFFFFF",
+  color: {
+    bodyBg: "#000E16",
+    white: "#ffffff",
     black: "#000000",
+    headerFooter: "#605D5D",
+    lightBlue: "#8dbad8",
+    lightGray: "#E3DDDD",
+    mediumGray: "#AAAAAA",
+    darkGray: "#333333",
   },
   typography: {
     h1: "'Barlow Condensed', Arial, Helvetica, sans-serif",

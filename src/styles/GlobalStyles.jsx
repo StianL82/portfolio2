@@ -1,67 +1,87 @@
 import { createGlobalStyle } from "styled-components";
 
-const GlobalStyle = createGlobalStyle`
-  /*---------- CSS Variabler ----------*/
-  :root {
-    --color-site-background: #000E16;
-    --color-light-blue: #8dbad8;
-    --color-light-grey: #E3DDDD;
-    --color-header-footer: #605D5D;
-    --color-white: #FFFFFF;
-    --color-black: #000000;
-    --border: 1px solid #E3DDDD;
-    --text-h1: 'Barlow Condensed', Arial, Helvetica, sans-serif;
-    --text-h2: 'Barlow Condensed', Arial, Helvetica, sans-serif;
-    --text-h3: 'Protest Revolution', sans-serif;
-    --text-p-and-span: 'Sarabun', Arial, Helvetica, sans-serif;
-  }
-
-  /*---------- Global Reset ----------*/
-  * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+const GlobalStyles = createGlobalStyle`
+  html {
+    height: 100%;
   }
 
   body {
-    background-color: var(--color-site-background);
-    color: var(--color-white);
-    font-family: var(--text-p-and-span);
+    margin: 0;
+    padding: 0;
+    font-family: ${(props) => props.theme.typography.text};
+    background-color: ${(props) => props.theme.color.bodyBg};
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    overflow-x: hidden;
   }
 
-  h1 {
-    font-size: clamp(44px, 4vw, 58px);
-    font-family: var(--text-h1);
-    text-align: center;
-    margin: 80px 20px;
+#root {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  width: 100%;
+}
+
+main {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+  *, *::before, *::after {
+    box-sizing: border-box;
   }
+
+h1 {
+  text-align: center;
+  margin: 0;
+  padding: 20px 0;
+  font-weight: 700;
+  font-family: ${(props) => props.theme.typography.h1};
+  color: ${(props) => props.theme.color.white};
+  font-size: clamp(40px, 6vw, 70px);
+  word-break: break-word;
+  overflow-wrap: break-word;
+  max-width: 90%;
+  margin: 0 auto;
+}
+
 
   h2 {
-    font-size: clamp(30px, 4vw, 38px);
-    font-family: var(--text-h2);
-    color: var(--color-white);
     text-align: center;
+    margin: 0;
+    padding: 10px 0;
+    font-weight: 700;
+    font-family: ${(props) => props.theme.typography.h2};
+    color: ${(props) => props.theme.color.white};
+    font-size: clamp(40px, 6vw, 50px);
   }
 
-  h3 {
-    font-size: clamp(20px, 3vw, 28px);
-    font-family: var(--text-h2);
+  h3, h4, h5, h6 {
+    margin: 0;
+    padding: 10px 0;
+    font-weight: 700;
+    font-family: ${(props) => props.theme.typography.h3};
   }
 
-  h4, p, span {
-    font-size: clamp(16px, 2vw, 18px);
-    font-family: var(--text-p-and-span);
+  p {
+    line-height: 1.6;
+    margin: 10px 0;
+    font-family: ${(props) => props.theme.typography.text};
   }
 
-  a {
-    text-decoration: none;
-    color: inherit;
-  }
-
-  .wrapper {
-    max-width: 1200px;
-    margin: 0 auto;
+  .sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    border: 0;
   }
 `;
 
-export default GlobalStyle;
+export default GlobalStyles;
