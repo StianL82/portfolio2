@@ -45,7 +45,7 @@ h1 {
   overflow-wrap: break-word;
   max-width: 90%;
   margin: 0 auto;
-  background: linear-gradient(90deg, ${(props) => props.theme.color.lightBlue}, ${(props) => props.theme.color.white});
+  background: linear-gradient(180deg, ${(props) => props.theme.color.lightBlue}, ${(props) => props.theme.color.white});
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
