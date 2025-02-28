@@ -12,7 +12,9 @@ Portfolio for the second year of Frontend Development studies at NOROFF 😄
 
 ## Description
 
-This page showcases three projects that I worked on throughout the second year of the Frontend Development studies at NOROFF. I decided to recreate the page I made for POR1 using React for this project. I had two weeks to create the page, and it was required to be responsive, featuring project cards.
+This page showcases three projects that I worked on throughout the second year of the Frontend Development studies at NOROFF. I decided to recreate the page I made for POR1 using React for this project.
+
+The portfolio highlights key projects, each presented with a brief description, a preview image, and links to both the GitHub repository and the live site. The page is fully responsive and structured to provide a clean and professional overview of my work.
 
 ## Built With
 
