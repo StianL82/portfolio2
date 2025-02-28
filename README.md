@@ -2,13 +2,13 @@
 
 ## Stian Lilleng
 
-![image](/images/readme/screencapture-portfolio2-stianl.png)
+![image](public/images/readme/screencapture-portfolio2-stianl.png)
 
 Portfolio for the second year of Frontend Development studies at NOROFF 😄
 
 ## Visit the page at:
 
-[![Portfolio](/images/logo.png)](https://portfolio2-stianl.netlify.app/)
+[![Portfolio](public/images/logo.png)](https://portfolio2-stianl.netlify.app/)
 
 ## Description
 
