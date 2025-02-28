@@ -1,6 +1,15 @@
 import React from "react";
 import * as S from "./index.styles";
 
+/**
+ * Header component containing the navigation menu.
+ * Provides smooth scrolling to different sections of the page.
+ *
+ * @component
+ * @param {string} id - The ID of the section to scroll to.
+ * @param {number} offset - The offset in pixels for the scroll position.
+ */
+
 const Header = () => {
   const handleScroll = (id, offset) => {
     const element = document.getElementById(id);

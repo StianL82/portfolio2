@@ -1,6 +1,16 @@
 import React from "react";
 import * as S from "./index.styles";
 
+/**
+ * Projects Component
+ *
+ * Displays a list of projects in a structured layout with project details,
+ * images, and links to GitHub repositories and live sites.
+ *
+ * @component
+ * @returns {JSX.Element} The rendered Projects section.
+ */
+
 const projects = [
   {
     title: "Project Exam 2 - Holidaze",

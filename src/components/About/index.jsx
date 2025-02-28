@@ -1,6 +1,16 @@
 import React from "react";
 import * as S from "./index.styles";
 
+/**
+ * About Component
+ *
+ * Displays an introduction about Stian Lilleng, including professional background,
+ * education, and an overview of the portfolio's purpose.
+ *
+ * @component
+ * @returns {JSX.Element} The rendered About component.
+ */
+
 const About = () => {
   return (
     <S.AboutContainer id="about">
