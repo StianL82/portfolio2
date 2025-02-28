@@ -40,24 +40,30 @@ h1 {
   padding: 20px 0;
   font-weight: 700;
   font-family: ${(props) => props.theme.typography.h1};
-  color: ${(props) => props.theme.color.white};
   font-size: clamp(40px, 6vw, 70px);
   word-break: break-word;
   overflow-wrap: break-word;
   max-width: 90%;
   margin: 0 auto;
+  background: linear-gradient(90deg, ${(props) => props.theme.color.lightBlue}, ${(props) => props.theme.color.white});
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 
-  h2 {
-    text-align: center;
-    margin: 0;
-    padding: 10px 0;
-    font-weight: 700;
-    font-family: ${(props) => props.theme.typography.h2};
-    color: ${(props) => props.theme.color.white};
-    font-size: clamp(40px, 6vw, 50px);
-  }
+
+h2 {
+  text-align: center;
+  margin: 0;
+  padding: 10px 0;
+  font-weight: 700;
+  font-family: ${(props) => props.theme.typography.h2};
+  font-size: clamp(40px, 6vw, 50px);
+  background: linear-gradient(90deg, ${(props) => props.theme.color.lightBlue}, ${(props) => props.theme.color.white});
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
 
   h3, h4, h5, h6 {
     margin: 0;
